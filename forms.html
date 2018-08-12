@@ -50,6 +50,9 @@
 
     <label for="lastName">Last Name: </label>
     <input type="text" required placeholder="Bartelli" required>
+    <br>
+    <br>
+
     <!-- Gender -->
     <label for="Male">Male</label>
     <input id="Male" name="Gender" type="radio" value="Male">
@@ -59,7 +62,46 @@
 
     <label for="Other">Other</label>
     <input id="Other" name="Gender" type="radio" value="Other">
+    <br>
+    <br>
 
+    <!-- Email -->
+    <label>Email:
+        <input name="email" type="email" required placeholder="Your Email">
+    </label>
+
+    <!-- Password -->
+    <label>
+        Password:
+        <input name="password" type="password" required minlength="5" maxlength="10">
+    </label>
+
+    <!-- Birthday -->
+    <p>Birthday:
+        <select name="Month">
+            <option value="Jan">Jan</option>
+            <option value="Feb">Feb</option>
+            <option value="Mar">Mar</option>
+        </select>
+        <select name="Day">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <select name="Year">
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+        </select>
+    </p>
+
+    <!-- Terms -->
+    <p>I agree to the terms and conditions
+        <input type="checkbox">
+    </p>
+
+    <!-- Submit -->
+    <input type="submit">
 </form>
 
 </html>
